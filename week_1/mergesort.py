@@ -1,14 +1,11 @@
 def mergesort(itemlist):
-    # will round down
+    # Python will innately round down if uneven list.
     if len(itemlist) <= 1:
         return itemlist
 
     half = len(itemlist) / 2
     a_list = itemlist[:half]
     b_list = itemlist[half:]
-
-    #print a_list
-    #print b_list
 
     a_list = mergesort(a_list)
     b_list = mergesort(b_list)
